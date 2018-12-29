@@ -1,0 +1,105 @@
+.signIn {
+  width: 100vw;
+  height: 100vh;
+}
+.main {
+  height: calc(100vh - 36px);
+  background-image: url('./resigterBg.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signIn-box {
+  width: 621px;
+  height: 326px;
+  border-radius: 2px;
+  padding-top: 63px;
+  padding-bottom: 53px;
+  padding-left: 57px;
+  padding-right: 60px;
+  box-shadow: 0 0 10px 1px rgba(138, 138, 138, 0.2);
+  overflow: hidden;
+  z-index: 2;
+  padding: 50px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+.signIn-box::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -2;
+  filter: blur(20px);
+  background-color: rgba(250, 250, 250, 0.2);
+}
+.signIn-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-filter: blur(20px);
+  -moz-filter: blur(20px);
+  -ms-filter: blur(20px);
+  -o-filter: blur(20px);
+  filter: blur(20px);
+  z-index: -3;
+  margin: -30px;
+  background-image: url('./resigterBg.png');
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.form {
+  text-align: right;
+}
+form {
+  margin-top: 30px;
+}
+.row {
+  width: 228px;
+  text-align: left;
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+.row:nth-child(2) {
+  margin-top: 30px;
+}
+.row .el-icon-arrow-right {
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  font-size: 6px;
+  padding: 2px;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+.row input {
+  background: none;
+  border: none;
+  outline: none;
+}
+.form strong {
+  font-size: 32px;
+  color: #ffffff;
+}
+.onClickToRegister {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.onClickToRegister span {
+  color: #ffffff;
+  font-size: 12px;
+  cursor: pointer;
+}
